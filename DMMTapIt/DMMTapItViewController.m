@@ -212,7 +212,9 @@ double MusicRateForGameCount(NSInteger gameCount) {
 - (void)viewTapped:(UITapGestureRecognizer *)gesture {
     if (self.action.gameAction == DMMTapItGameActionTap) {
         NSLog(@"View Swipped at %@", NSStringFromCGPoint([gesture locationInView:self.view]));
-        [self.tapSoundEffect play];
+        if (![self.tapSoundEffect play]) {
+            NSLog(@"Failed to play");
+        }
         [self nextAction];
     } else {
         [self endGame];
@@ -268,7 +270,7 @@ double MusicRateForGameCount(NSInteger gameCount) {
 
     DMMTapItGameAction lastAction = self.action.gameAction;
     self.action = [DMMTapItAction generateRandomAction];
-    //    self.action = [DMMTapItAction actionWithGameAction:DMMTapItGameActionWhip];
+    //        self.action = [DMMTapItAction actionWithGameAction:DMMTapItGameActionTap];
     if (lastAction == DMMTapItGameActionWhip
         && self.action.gameAction == DMMTapItGameActionWhip) {
         [self speakUtterance:[AVSpeechUtterance speechUtteranceWithString:NSLocalizedString(@"Whip it good", @"whip it good")]];
