@@ -14,6 +14,14 @@
 		54279F811AC9B0110065E798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54279F801AC9B0110065E798 /* Images.xcassets */; };
 		54279F841AC9B0110065E798 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54279F821AC9B0110065E798 /* LaunchScreen.xib */; };
 		54279F901AC9B0110065E798 /* DMMTapItDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54279F8F1AC9B0110065E798 /* DMMTapItDemoTests.m */; };
+		54E647821ACA100B001FA30A /* tap.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54E6477E1ACA100B001FA30A /* tap.m4a */; };
+		54E647831ACA100B001FA30A /* end.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54E6477F1ACA100B001FA30A /* end.m4a */; };
+		54E647841ACA100B001FA30A /* swipe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54E647801ACA100B001FA30A /* swipe.m4a */; };
+		54E647851ACA100B001FA30A /* whip.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54E647811ACA100B001FA30A /* whip.m4a */; };
+		54FCB7211AC9B0E300134981 /* DMMTapItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FCB71F1AC9B0E300134981 /* DMMTapItViewController.m */; };
+		54FCB7221AC9B0E300134981 /* DMMTapItViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FCB7201AC9B0E300134981 /* DMMTapItViewController.xib */; };
+		54FCB7281AC9C7BB00134981 /* DMMTapItAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FCB7271AC9C7BB00134981 /* DMMTapItAction.m */; };
+		54FCB72A1AC9F95700134981 /* beat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54FCB7291AC9F95700134981 /* beat.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,16 @@
 		54279F891AC9B0110065E798 /* DMMTapItDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMMTapItDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54279F8E1AC9B0110065E798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54279F8F1AC9B0110065E798 /* DMMTapItDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMTapItDemoTests.m; sourceTree = "<group>"; };
+		54E6477E1ACA100B001FA30A /* tap.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.m4a; sourceTree = "<group>"; };
+		54E6477F1ACA100B001FA30A /* end.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = end.m4a; sourceTree = "<group>"; };
+		54E647801ACA100B001FA30A /* swipe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = swipe.m4a; sourceTree = "<group>"; };
+		54E647811ACA100B001FA30A /* whip.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = whip.m4a; sourceTree = "<group>"; };
+		54FCB71E1AC9B0E300134981 /* DMMTapItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMTapItViewController.h; path = DMMTapIt/DMMTapItViewController.h; sourceTree = "<group>"; };
+		54FCB71F1AC9B0E300134981 /* DMMTapItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMTapItViewController.m; path = DMMTapIt/DMMTapItViewController.m; sourceTree = "<group>"; };
+		54FCB7201AC9B0E300134981 /* DMMTapItViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DMMTapItViewController.xib; path = DMMTapIt/DMMTapItViewController.xib; sourceTree = "<group>"; };
+		54FCB7261AC9C7BB00134981 /* DMMTapItAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMTapItAction.h; path = DMMTapIt/DMMTapItAction.h; sourceTree = "<group>"; };
+		54FCB7271AC9C7BB00134981 /* DMMTapItAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMTapItAction.m; path = DMMTapIt/DMMTapItAction.m; sourceTree = "<group>"; };
+		54FCB7291AC9F95700134981 /* beat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = beat.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,7 @@
 		54279F671AC9B0110065E798 = {
 			isa = PBXGroup;
 			children = (
+				54FCB71D1AC9B0C200134981 /* DMMTapIt */,
 				54279F721AC9B0110065E798 /* DMMTapItDemo */,
 				54279F8C1AC9B0110065E798 /* DMMTapItDemoTests */,
 				54279F711AC9B0110065E798 /* Products */,
@@ -117,6 +136,31 @@
 				54279F8E1AC9B0110065E798 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54E6476D1AC9FEB6001FA30A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				54E6477E1ACA100B001FA30A /* tap.m4a */,
+				54E6477F1ACA100B001FA30A /* end.m4a */,
+				54E647801ACA100B001FA30A /* swipe.m4a */,
+				54E647811ACA100B001FA30A /* whip.m4a */,
+				54FCB7291AC9F95700134981 /* beat.m4a */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		54FCB71D1AC9B0C200134981 /* DMMTapIt */ = {
+			isa = PBXGroup;
+			children = (
+				54E6476D1AC9FEB6001FA30A /* Sounds */,
+				54FCB71E1AC9B0E300134981 /* DMMTapItViewController.h */,
+				54FCB71F1AC9B0E300134981 /* DMMTapItViewController.m */,
+				54FCB7201AC9B0E300134981 /* DMMTapItViewController.xib */,
+				54FCB7261AC9C7BB00134981 /* DMMTapItAction.h */,
+				54FCB7271AC9C7BB00134981 /* DMMTapItAction.m */,
+			);
+			name = DMMTapIt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +243,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E647821ACA100B001FA30A /* tap.m4a in Resources */,
+				54E647851ACA100B001FA30A /* whip.m4a in Resources */,
+				54E647841ACA100B001FA30A /* swipe.m4a in Resources */,
 				54279F7F1AC9B0110065E798 /* Main.storyboard in Resources */,
 				54279F841AC9B0110065E798 /* LaunchScreen.xib in Resources */,
+				54FCB7221AC9B0E300134981 /* DMMTapItViewController.xib in Resources */,
+				54E647831ACA100B001FA30A /* end.m4a in Resources */,
+				54FCB72A1AC9F95700134981 /* beat.m4a in Resources */,
 				54279F811AC9B0110065E798 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +271,8 @@
 			files = (
 				54279F7C1AC9B0110065E798 /* ViewController.m in Sources */,
 				54279F791AC9B0110065E798 /* AppDelegate.m in Sources */,
+				54FCB7281AC9C7BB00134981 /* DMMTapItAction.m in Sources */,
+				54FCB7211AC9B0E300134981 /* DMMTapItViewController.m in Sources */,
 				54279F761AC9B0110065E798 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +466,7 @@
 				54279F951AC9B0110065E798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54279F961AC9B0110065E798 /* Build configuration list for PBXNativeTarget "DMMTapItDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +475,7 @@
 				54279F981AC9B0110065E798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

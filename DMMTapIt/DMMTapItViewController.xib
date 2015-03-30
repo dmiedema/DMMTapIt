@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DMMTapItViewController">
+            <connections>
+                <outlet property="actionLabel" destination="lam-hi-wHr" id="R1t-sB-Xej"/>
+                <outlet property="countLabel" destination="JdK-Ki-GYw" id="aw8-ne-i1C"/>
+                <outlet property="startGameButton" destination="US9-5B-dII" id="23T-Kj-F5r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdK-Ki-GYw" userLabel="Score Label">
+                    <rect key="frame" x="582" y="32" width="10" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lam-hi-wHr" userLabel="Action Label">
+                    <rect key="frame" x="0.0" y="266" width="600" height="67"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="56"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US9-5B-dII">
+                    <rect key="frame" x="150" y="267.5" width="299" height="65"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                    <state key="normal" title="Start Dat Game">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startGameButtonPressed:" destination="-1" eventType="touchUpInside" id="O41-Lm-xLO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lam-hi-wHr" secondAttribute="trailing" id="4uf-Ob-0mP"/>
+                <constraint firstAttribute="bottom" secondItem="US9-5B-dII" secondAttribute="bottom" constant="16" id="DGj-np-bQh"/>
+                <constraint firstAttribute="trailing" secondItem="JdK-Ki-GYw" secondAttribute="trailing" constant="8" id="QeM-TT-3Mf"/>
+                <constraint firstAttribute="centerX" secondItem="US9-5B-dII" secondAttribute="centerX" id="RwG-B1-7p1"/>
+                <constraint firstItem="JdK-Ki-GYw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="SWv-QH-aO8"/>
+                <constraint firstAttribute="centerY" secondItem="US9-5B-dII" secondAttribute="centerY" id="aPO-ED-0iY"/>
+                <constraint firstItem="lam-hi-wHr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e5n-cb-TGc"/>
+                <constraint firstItem="lam-hi-wHr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="lLp-vm-5qJ"/>
+                <constraint firstAttribute="centerY" secondItem="lam-hi-wHr" secondAttribute="centerY" id="rvP-Xh-trm"/>
+                <constraint firstAttribute="centerX" secondItem="lam-hi-wHr" secondAttribute="centerX" id="wT2-Ts-Cfn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lLp-vm-5qJ"/>
+                    <exclude reference="DGj-np-bQh"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
